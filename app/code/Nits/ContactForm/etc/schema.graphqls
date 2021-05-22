@@ -3,6 +3,7 @@ type Query {
         firstname: String @doc(description: "Firstname")
         lastname: String @doc(description: "Lastname")
         email: String @doc(description: "Email")
+        phone: String @doc(description: "Phone")
         comment: String @doc(description: "Comment")
         created_at: String @doc(description: "Created Date of the enquiry")
     ): [Customcontactlist] 
@@ -16,6 +17,7 @@ type Customcontactlist @doc(description: "Customcontactlist defines the unique c
     firstname: String @doc(description: "Firstname")
     lastname: String @doc(description: "Lastname")
     email: String @doc(description: "Email")
+    phone: String @doc(description: "Phone")
     comment: String @doc(description: "Comment")
     created_at: String @doc(description: "Created Date of the enquiry")
 }
@@ -36,6 +38,7 @@ input CustomContactInput {
     firstname: String @doc(description: "Firstname")
     lastname: String @doc(description: "Lastname")
     email: String @doc(description: "Email")
+    phone: String @doc(description: "Phone")
     comment: String @doc(description: "Comment")
     created_at: String @doc(description: "Created Date of the enquiry")
 }
@@ -45,6 +48,7 @@ type CustomContactData {
     firstname: String @doc(description: "Firstname")
     lastname: String @doc(description: "Lastname")
     email: String @doc(description: "Email")
+    phone: String @doc(description: "Phone")
     comment: String @doc(description: "Comment")
     created_at: String @doc(description: "Created Date of the enquiry")
 }

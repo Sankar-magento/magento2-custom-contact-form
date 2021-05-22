@@ -4,7 +4,7 @@
 		<fieldset class="fieldset">
 			<legend class="legend">
 				<span>
-					<?= __("Query Detail") ?>
+					<?= __("Custom Contact Form") ?>
 				</span>
 			</legend>
 			<br />
@@ -15,7 +15,17 @@
 					</span>
 				</label>
 				<div class="control">
-					<input name="name" id="name" title="<?= __('Name') ?>" class="input-text" type="text" data-validate="{required:true}"/>
+					<input name="firstname" id="name" title="<?= __('First Name') ?>" class="input-text" type="text" data-validate="{required:true}"/>
+				</div>
+			</div>
+			<div class="field name required">
+				<label class="label" for="name">
+					<span>
+						<?= __('Last Name') ?>
+					</span>
+				</label>
+				<div class="control">
+					<input name="lastname" id="name" title="<?= __('Last Name') ?>" class="input-text" type="text" data-validate="{required:true}"/>
 				</div>
 			</div>
 			<div class="field email required">
@@ -28,14 +38,14 @@
 					<input name="email" id="email" title="<?= __('Email') ?>" class="input-text" type="email" data-validate="{required:true, 'validate-email':true}"/>
 				</div>
 			</div>
-			<div class="field telephone required">
-				<label class="label" for="telephone">
+			<div class="field phone required">
+				<label class="label" for="phone">
 					<span>
 						<?= __('Phone Number') ?>
 					</span>
 				</label>
 				<div class="control">
-					<input name="telephone" id="telephone" title="<?= __('Phone Number') ?>" value="" class="input-text" type="text" data-validate="{required:true, 'validate-number':true, 'validate-greater-than-zero':true, 'maxlength':10}" />
+					<input name="phone" id="phone" title="<?= __('Phone Number') ?>" value="" class="input-text" type="text" data-validate="{required:true, 'validate-number':true, 'validate-greater-than-zero':true, 'maxlength':10}" />
 				</div>
 			</div>
 			<div class="field comment required">
@@ -62,14 +72,3 @@
 		</div>
 	</form>
 </div>
-<script type="text/javascript">
-require([
-    'jquery',
-    'mage/mage'
-], function($){
- 
-   var dataForm = $('#custom-contact-form');
-   dataForm.mage('validation', {});
- 
-});
-</script>

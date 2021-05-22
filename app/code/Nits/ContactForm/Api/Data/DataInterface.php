@@ -7,9 +7,10 @@ interface DataInterface
     /**
      * Constants for keys of data array. Identical to the name of the getter in snake case
      */
-    const DATA_ID               = 'id';
-    const FIRSTNAME            = 'firstname';
-    const LASTNAME             = 'lastname';
+    const ID                    = 'id';
+    const FIRSTNAME             = 'firstname';
+    const LASTNAME              = 'lastname';
+    const PHONE                 = 'phone';
     const EMAIL                 = 'email';
     const COMMENT               = 'comment';
     const CREATED_AT            = 'created_at';
@@ -74,6 +75,21 @@ interface DataInterface
      * @return mixed
      */
     public function setEmail($email);
+
+    /**
+     * Get Phone
+     *
+     * @return string
+     */
+    public function getPhone();
+
+    /**
+     * Set Phone
+     *
+     * @param $phone
+     * @return mixed
+     */
+    public function setPhone($phone);
 
     /**
      * Get Comment

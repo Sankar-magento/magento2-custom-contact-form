@@ -33,6 +33,27 @@ class Data extends AbstractModel implements DataInterface
     }
 
     /**
+     * Get Id
+     *
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->getData(DataInterface::ID);
+    }
+
+    /**
+     * Set Id
+     *
+     * @param $id
+     * @return $this
+     */
+    public function setId($id)
+    {
+        return $this->setData(DataInterface::ID, $id);
+    }
+
+    /**
      * Get firstname
      *
      * @return string
@@ -93,6 +114,27 @@ class Data extends AbstractModel implements DataInterface
     public function setEmail($email)
     {
         return $this->setData(DataInterface::EMAIL, $email);
+    }
+
+    /**
+     * Get phone
+     *
+     * @return string
+     */
+    public function getPhone()
+    {
+        return $this->getData(DataInterface::PHONE);
+    }
+
+    /**
+     * Set phone
+     *
+     * @param $phone
+     * @return $this
+     */
+    public function setPhone($phone)
+    {
+        return $this->setData(DataInterface::PHONE, $phone);
     }
 
     /**

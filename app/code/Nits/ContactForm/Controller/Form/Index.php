@@ -7,6 +7,7 @@ use Nits\ContactForm\Api\Data\DataInterface;
 use Nits\ContactForm\Api\Data\DataInterfaceFactory;
 use Magento\Framework\Message\Manager;
 use Magento\Framework\App\Action\Context;
+use Magento\Framework\Controller\ResultFactory;
 
 class Index extends \Magento\Framework\App\Action\Action
 {
@@ -40,7 +41,6 @@ class Index extends \Magento\Framework\App\Action\Action
 	public function execute()
     {
         $post = (array) $this->getRequest()->getPost();
-
         if (!empty($post)) {
             try {
             	$model = $this->dataFactory->create();

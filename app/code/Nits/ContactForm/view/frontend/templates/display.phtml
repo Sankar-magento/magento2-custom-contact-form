@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @var \Nits\ContactForm\Block\Display $block
+ */
+?>
+<h3><?= __('Custom Contact Form Data') ?></h3>
+<table>
+	<tr>
+		<th><?= __('ID') ?></th>
+		<th><?= __('First Name') ?></th>
+		<th><?= __('Last Name') ?></th>
+		<th><?= __('Email') ?></th>
+		<th><?= __('Phone') ?></th>
+		<th><?= __('Comment') ?></th>
+		<th><?= __('Created At') ?></th>
+	</tr>
+    <?php foreach ($block->getContactCollection() as $key=>$post){ ?>
+    <tr>
+    	<td><?= $post['id'] ?></td>
+    	<td><?= $post['firstname'] ?></td>
+    	<td><?= $post['lastname'] ?></td>
+    	<td><?= $post['email'] ?></td>
+    	<td><?= $post['phone'] ?></td>
+    	<td><?= $post['comment'] ?></td>
+    	<td><?= $post['created_at'] ?></td>
+    </tr>
+    <?php } ?>
+</table>
