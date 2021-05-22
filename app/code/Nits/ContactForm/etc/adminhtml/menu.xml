@@ -1,9 +1,6 @@
-<!--
-
--->
+<?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Nits_ContactForm::data" title="ContactForm Data" module="Nits_ContactForm" sortOrder="75" resource="Nits_ContactForm::data"
-             action="customcontact/data/index"/>
+        <add id="Nits_ContactForm::data" title="ContactForm Data" module="Nits_ContactForm" sortOrder="75" resource="Nits_ContactForm::data" action="customcontact/data/index"/>
     </menu>
 </config>

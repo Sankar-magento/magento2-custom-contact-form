@@ -74,6 +74,9 @@ class CreateCustomData
         if (!isset($data[DataInterface::EMAIL])) {
             throw new LocalizedException(__('Email must be set'));
         }
+        if (!isset($data[DataInterface::PHONE])) {
+            throw new LocalizedException(__('Phone must be set'));
+        }
         if (!isset($data[DataInterface::COMMENT])) {
             throw new LocalizedException(__('Comment must be set'));
         }
